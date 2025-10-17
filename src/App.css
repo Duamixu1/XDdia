@@ -1,0 +1,406 @@
+/* App 主要样式 */
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 顶部导航栏 */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+}
+
+/* Twitter链接样式 */
+.twitter-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.twitter-link:hover {
+  background: linear-gradient(135deg, rgba(29, 161, 242, 0.3), rgba(29, 161, 242, 0.1));
+  border-color: rgba(29, 161, 242, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 161, 242, 0.3);
+}
+
+/* 语言切换按钮 */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.language-toggle:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.language-toggle svg {
+  opacity: 0.8;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 60px; /* 为顶部导航栏留出空间 */
+}
+
+/* Header 样式 */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd, #bbdefb, #90caf9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  letter-spacing: -2px;
+}
+
+.header p {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #e3f2fd;
+  text-shadow: 0 0 10px rgba(227, 242, 253, 0.5);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.main-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.connect-button {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.8), rgba(25, 118, 210, 0.8));
+  border: 1px solid rgba(33, 150, 243, 0.6);
+  color: white;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.connect-button:hover {
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.9), rgba(21, 101, 192, 0.9));
+  border-color: rgba(25, 118, 210, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(33, 150, 243, 0.4);
+}
+
+.status-message {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.status-message p {
+  margin: 0;
+}
+
+/* 钱包信息样式 */
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.connected-address {
+  font-size: 1rem;
+  color: #e3f2fd;
+  margin: 0;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* 加载动画 */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-top: 4px solid #fff;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* 错误处理按钮样式 */
+.error-actions {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.retry-button, .test-mode-button, .debug-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.retry-button {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.retry-button:hover {
+  background: linear-gradient(135deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.test-mode-button {
+  background: linear-gradient(135deg, #FF9800, #F57C00);
+  color: white;
+  border: 1px solid rgba(255, 152, 0, 0.3);
+}
+
+.test-mode-button:hover {
+  background: linear-gradient(135deg, #F57C00, #E65100);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+}
+
+.debug-button {
+  background: linear-gradient(135deg, #607D8B, #455A64);
+  color: white;
+  border: 1px solid rgba(96, 125, 139, 0.3);
+}
+
+.debug-button:hover {
+  background: linear-gradient(135deg, #455A64, #37474F);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(96, 125, 139, 0.4);
+}
+
+/* 调试信息样式 */
+.debug-info {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 40, 0.8));
+  border: 1px solid rgba(96, 125, 139, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: 'Courier New', monospace;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.debug-info h4 {
+  color: #4CAF50;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.debug-info pre {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  color: #E0E0E0;
+}
+
+.debug-info p {
+  margin: 8px 0;
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+/* 白名单信息说明样式 */
+.whitelist-info {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.15), rgba(25, 118, 210, 0.1));
+  border: 1px solid rgba(33, 150, 243, 0.4);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
+}
+
+.whitelist-info h4 {
+  color: #2196F3;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.whitelist-info p {
+  color: #E0E0E0;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.whitelist-info ul {
+  color: #BDBDBD;
+  padding-left: 20px;
+}
+
+.whitelist-info li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 15px 20px;
+  }
+  
+  .twitter-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .twitter-link svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .language-toggle {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .language-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .content-wrapper {
+    margin-top: 80px;
+    padding: 15px;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+  }
+  
+  .error-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .retry-button, .test-mode-button, .debug-button {
+    width: 200px;
+  }
+  
+  .debug-info, .whitelist-info {
+    margin: 15px 10px;
+    padding: 15px;
+  }
+  
+  .debug-info pre {
+    font-size: 10px;
+  }
+  
+  .connect-button {
+    min-width: 160px;
+    font-size: 1rem;
+  }
+}
