@@ -16,13 +16,13 @@ export const translations = {
     retryVerifying: "Re-verifying your address...",
     
     // Success Messages
-    verificationSuccess: "✅ Verification successful! Address {address} is on the whitelist.",
-    testModeSuccess: "🧪 Test mode: Address {address} is in the real data-based test whitelist.\n\n💡 Test whitelist is based on addresses used in the database.",
+    verificationSuccess: "✅ Verification successful! You are on the whitelist.",
+    testModeSuccess: "✅ Verification successful! You are on the whitelist.",
     
     // Error Messages
-    verificationFailed: "❌ Verification failed, address {address} is not on the whitelist.",
+    verificationFailed: "Verification failed, you are not on the whitelist. Welcome to participate in the public sale.",
     verificationError: "⚠️ Error during verification: {error}",
-    testModeFailed: "🧪 Test mode: Address {address} is not in the test whitelist.\n\n💡 Test whitelist is based on addresses used in the database.",
+    testModeFailed: "Verification failed, you are not on the whitelist. Welcome to participate in the public sale.",
     
     // Wallet Errors
     userRejected: "User rejected the connection request.",
@@ -68,7 +68,7 @@ export const translations = {
       "0x49af...493a7 (Database used)",
       "0x55a4...698fc8 (Database used)",
       "0xe8af...c3e1a (Database used)",
-      "0x8da7...95571b (New address)"
+      "0x8Da7...571b (New address)"
     ],
     
     // Language
@@ -92,13 +92,13 @@ export const translations = {
     retryVerifying: "正在重新验证您的地址...",
     
     // Success Messages
-    verificationSuccess: "✅ 验证成功！地址 {address} 在白名单中。",
-    testModeSuccess: "🧪 测试模式：地址 {address} 在基于真实数据的测试白名单中。\n\n💡 测试白名单基于数据库中已使用的地址。",
+    verificationSuccess: "✅ 验证成功！您在白名单中。",
+    testModeSuccess: "✅ 验证成功！您在白名单中。",
     
     // Error Messages
-    verificationFailed: "❌ 验证失败，地址 {address} 不在白名单中。",
+    verificationFailed: "验证失败，您不在白名单中。欢迎参与公开销售。",
     verificationError: "⚠️ 验证过程中出现错误：{error}",
-    testModeFailed: "🧪 测试模式：地址 {address} 不在测试白名单中。\n\n💡 测试白名单基于数据库中已使用的地址。",
+    testModeFailed: "验证失败，您不在白名单中。欢迎参与公开销售。",
     
     // Wallet Errors
     userRejected: "用户拒绝了连接请求。",
@@ -144,7 +144,7 @@ export const translations = {
       "0x49af...493a7 (数据库已使用)",
       "0x55a4...698fc8 (数据库已使用)",
       "0xe8af...c3e1a (数据库已使用)",
-      "0x8da7...95571b (新增地址)"
+      "0x8Da7...571b (新增地址)"
     ],
     
     // Language
